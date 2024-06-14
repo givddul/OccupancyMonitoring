@@ -1,0 +1,43 @@
+
+
+
+
+<div class="todaysDate">
+    <h2 id="todaysData">Data for: <span id="todaysDate"></span></h2>
+</div>
+
+<div class="libraryStatusDiv">
+    <h3 class="libraryStatus"></h3>
+</div>
+
+
+
+
+<div class="live-data">
+    <h1>LIVE</h1>
+    <% if(response) { %>
+        <div class="circle-container">
+            <div class="circle-item">
+                <p>Total Count</p>
+                <div class="circle"><span id="entryCount"><%= response.entry %></span></div>
+            </div>
+            <div class="circle-item">
+                <p>Ground Floor</p>
+                <div class="circle"><span id="groundFloorCount"><%= response.groundFloor %></span></div>
+            </div>
+            <div class="circle-item">
+                <p>First Floor</p>
+                <div class="circle"><span id="firstFloorCount"><%= response.firstFloor %></span></div>
+            </div>
+            <div class="circle-item">
+                <p>Second & Third Floor</p>
+                <div class="circle"><span id="secondFloorCount"><%= response.secondFloor %></span></div>
+            </div>
+        </div>
+        <div class="date-box">
+            <p>Last Updated: <span id="timeStamp"><%= response.timestamp %></span></p>
+        </div>
+    <% } else { %>
+        <p class="no-data">No data available</p>
+    <% } %>
+</div>
