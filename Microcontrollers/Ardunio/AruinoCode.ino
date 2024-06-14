@@ -4,8 +4,8 @@
 #include <WiFiS3.h>
 #include <ArduinoHttpClient.h>
 
-const char* ssid = "Seif";
-const char* password = "12345678";
+const char* ssid = "...";
+const char* password = "...";
 const char* serverAddress = "192.168.59.211";
 int serverPort = 3000;
 const char* resource = "/api/occupancy/update";
