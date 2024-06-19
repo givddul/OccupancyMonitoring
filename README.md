@@ -16,7 +16,7 @@ The web server is a Node.js Express and stores occupancy data in MongoDB.
 
 ### Arduino - C++ Code
 
-The `/Microcontrollers/Arduino` directory contains two versions of the Arduino code, with and without freeRTOS. Ideally, we wanted to utilize freeRTOS, but ran into memory problems when trying to communicate with 3 Picos. Therefore, the `ArduinoFreeRTOS.ino` version only communicates with 2 Pico units, while the non-RTOS 'ArduinoCode.into` code does the complete job, communicating with all 3 Picos.
+The `/Microcontrollers/Arduino` directory contains two versions of the Arduino code, with and without freeRTOS. Ideally, we wanted to utilize freeRTOS, but ran into memory problems when trying to communicate with 3 Picos. Therefore, the `ArduinoFreeRTOS.ino` version only communicates with 2 Pico units, while the non-RTOS `ArduinoCode.into` code does the complete job, communicating with all 3 Picos.
 
 ## 
 <img src="Project_overview.jpg" alt="structure"/>
